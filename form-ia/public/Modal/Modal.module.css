@@ -59,7 +59,7 @@
 @media (min-width: 768px) {
     .infoGrid {
       grid-template-columns: 1fr 1fr;
-}
+    }
 }
 
 .infoLabel {
@@ -110,4 +110,34 @@
 .confirmButton:hover {
     background-color: #2563eb;
 }
-  
+
+@media (max-width: 480px) {
+    .modalContainer {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+    
+    .modalTitle {
+        font-size: 1rem;
+    }
+    
+    .modalContent {
+        padding: 1rem;
+    }
+    
+    .modalBody {
+        margin: 20px;
+    }
+    
+    .actionContainer {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .editButton, .confirmButton {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 0.875rem;
+    }
+}
